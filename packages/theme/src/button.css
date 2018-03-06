@@ -1,0 +1,41 @@
+@import "common.css";
+@b m {
+  @e button {
+    cursor: pointer;
+    border-radius: var(--border-radius-base);
+    padding: 12px 20px;
+    font-size: 14px;
+    @m size-sm {
+      padding: 9px 15px;
+      font-size: 12px;
+      border-radius: 3px;
+    }
+    @m size-default {
+      padding: 12px 20px;
+      font-size: 14px;
+    }
+    @m default {
+      background: var(--button-default-fill);
+      border: var(--border-base);
+      color: var(--button-default-color);
+    }
+    @m success {
+      background: var(--color-success);
+      &:hover,
+      &:focus {
+        opacity: 0.7;
+      }
+      &:disabled {
+        opacity: 0.3;
+      }
+      @when plain {
+        background: rgba(var(--color-success), 0.05);
+        border-color: rgba(var(--color-success), 0.8);
+        color: var(--color-success);
+      }
+    }
+    &.is-round {
+      border-radius: 20px;
+    }
+  }
+}

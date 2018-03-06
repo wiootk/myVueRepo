@@ -1,0 +1,22 @@
+:root {
+  --color-primary: #3FAAF5;
+  --border-radius-base: 4px; 
+  --size-base: 14px;
+  --button-font-size: 14px;
+  --button-border-radius: var(--border-radius-base); 
+  --color-success: #13ce66;
+
+  --color-white: #fff;
+  --button-default-fill: var(--color-white); 
+ --border-width-base: 1px;
+ --border-style-base: solid;
+
+ --color-primary: #3FAAF5;
+ --color-base-black: color(var(--color-primary) h(+6) s(33%) l(18%));
+ --border-color-base: color(var(--color-base-black) s(26%) l(80%));
+
+  --border-base: var(--border-width-base) var(--border-style-base) var(--border-color-base);
+  --button-default-color: var(--color-base-black);
+}
+
+
